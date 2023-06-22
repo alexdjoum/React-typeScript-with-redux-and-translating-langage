@@ -8,10 +8,10 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const message ="Jean";
+
 root.render(
   <React.StrictMode>
-    <App message ={message} />
+    <App />
   </React.StrictMode>
 );
 

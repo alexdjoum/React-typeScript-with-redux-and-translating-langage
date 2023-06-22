@@ -1,15 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Landing from './Landing'
 
-type AppProps = {
-  message: string
-}
 
-const App = ({ message }: AppProps) => {
+
+// const firstname ="boris"
+const App = () => {
   return (
     <div>
-      {message}
+      <Landing message='bonjour' />
     </div>
   );
 }
