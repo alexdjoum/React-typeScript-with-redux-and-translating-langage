@@ -26,7 +26,7 @@ class Landing extends Component<AppProps, MyState> {
     updateField = (value: string, field: string) => {
         this.setState({[field]: value})
     }
-    
+    /**my render function which return JSX */
     render() {
         const {message} = this.props
         const {count} = this.state
