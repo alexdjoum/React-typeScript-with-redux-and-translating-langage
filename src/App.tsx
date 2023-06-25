@@ -9,7 +9,7 @@ import Landing from './Landing'
 const App = () => {
   return (
     <div>
-      <Landing message='bonjour' />
+      <Landing message />
     </div>
   );
 }
