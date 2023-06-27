@@ -3,15 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {IntlProvider} from 'react-intl';
+import { Provider } from 'react-redux'
+import store from './app/store'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+const locale = navigator.language
+
+if (locale === "en-US") {
+
+}
 
 root.render(
   <React.StrictMode>
-    <App />
+      <Provider store={store}>
+        <IntlProvider locale={locale} >
+          < App />
+        </IntlProvider>
+      </Provider>
   </React.StrictMode>
 );
 
