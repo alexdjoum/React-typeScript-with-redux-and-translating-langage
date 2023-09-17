@@ -42,7 +42,8 @@ const membersReducer = (state = initialState, action: MemberAction) : MemberStat
     switch (action.type) {
         case "FETCH_ALL_MEMBERS_SUCCESS":
             return {
-                ...state,
+                error: null,
+                loading: false,
                 content: action.payload
             };
         case "FETCH_ALL_MEMBERS_ERROR":
