@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+
+img {
+  height: 25px;
+  width: auto;
+}
+
+.btn {
+  border-radius: 150px;
+}
+
+/*body main section div div div form .input-group:focus {
+  border-color: white;
+}*/
+/*# sourceMappingURL=style.css.map */
+.borderDisappear.form-control:focus {
+  color: black;
+  background-color: white;
+  border-color: #dee2e6;
+  border-bottom: 5px;
+  outline: 1px;
+  box-shadow: none;
+  border-block-end: white;
+  border-top: white;
+}

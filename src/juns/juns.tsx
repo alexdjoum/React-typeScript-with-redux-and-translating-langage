@@ -1,20 +1,32 @@
 import French from "../languages/fr-FR.json";
 import English from "../languages/en-US.json";
 import { createContext } from "react";
+import {MessageFormatElement} from "react-intl";
 
-type LanguageContextType = "fr" | "en";
+//export type LanguageContextType = "fr" | "en";
 
-export const languages ={
+export type Language = {
+    locale: string;
+    messages: Record<string, string>;
+};
+
+type LanguageContextType = {
+    selectedLanguage: Language;
+    handleLanguageChange: (locale: string) => void;
+};
+
+export const languages: Record<string, Language>  ={
     fr: {
-        locale: "FR",
+        locale: "fr",
         messages: French
     },
     en: {
-        locale: "EN",
+        locale: "en",
         messages: English
     }
 };
 
-const LanguageContext = createContext<LanguageContextType | null>("en");
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+
 
 export default LanguageContext;

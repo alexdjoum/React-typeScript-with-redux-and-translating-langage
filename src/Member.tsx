@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useContext} from 'react';
 import {members as membersStatic} from './users';
 //import Navbar from './Navbar';
 import './user.css';
@@ -6,6 +6,8 @@ import { connect, ConnectedProps } from 'react-redux';
 import {fetchAllMembersLoading, fetchAllMembers} from "./actions/user";
 
 import {RootState} from "./app/store";
+import LanguageContext from "./juns/juns";
+import {FormattedMessage} from "react-intl";
 
 
 
@@ -40,15 +42,30 @@ type Props = PropsFromRedux & {
 
 };*/
 const Members = (props: Props) => {
+    const locale = useContext(LanguageContext);
+
     useEffect( () => {
             props.fetchAllMembersLoading();
             setTimeout(() => {
                 props.fetchAllMembers(membersStatic)
-            }, 1000)
+            }, 2000)
         }, [])
     return (
         <>
             {/*<Navbar />*/}
+            <select
+              value={locale?.selectedLanguage.locale}
+              onChange={e => locale?.handleLanguageChange(e.target.value)}
+            >
+                <option value="fr">
+                    <FormattedMessage
+                        id="app.french"
+                        description="Greeting to welcome the user to the app"
+                        defaultMessage="Hello, {name}!"
+                    />
+                    {/*French*/}</option>
+                <option value="en">English</option>
+            </select>
             <div className='page'>
                 <div className="container">
                     <div className="row">
