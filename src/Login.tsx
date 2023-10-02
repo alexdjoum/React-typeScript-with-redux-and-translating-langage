@@ -19,7 +19,7 @@ const Login = () => {
                     <div className="container">
                         <div className="row d-flex justify-content-center">
 
-                            <div className="col-md-9 mt-5">
+                            <div className="col-md-8 mt-5">
                                 <p className="mt-5 fw-bold fs-4 ms-5 mb-5">Yahoo makes it easy to enjoy what matters
                                     most in Your
                                     world</p>
@@ -52,7 +52,7 @@ const Login = () => {
                                                 <label htmlFor="floatingInputGroup1">Username</label>
                                         </div>
                                     </div>
-                                    <button type="submit" className="btn btn-primary text-center w-100 mt-4">Next
+                                    <button type="submit" className="btn btn-primary text-center w-100 mt-4">Nextyui
                                     </button>
 
                                     <div className="mb-3 form-check">

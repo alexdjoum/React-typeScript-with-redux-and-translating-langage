@@ -1,6 +1,8 @@
 import Members from "./Member";
 import Login from "./Login";
 import Register from "./Register";
+import StoreFront from "./StoreFront";
+import StoreFront2 from "./StoreFront2";
 
 const routes = [
     {
@@ -15,9 +17,14 @@ const routes = [
         path: '/login',
         component: Login
     },
-
-    //{ path: '/about', component: About },
-    //{ path: '/contact', component: Contact },
+    {
+        path: '/storefront',
+        component: StoreFront
+    },
+    {
+        path: '/storefront2',
+        component: StoreFront2
+    },
 ];
 
 export default routes;
