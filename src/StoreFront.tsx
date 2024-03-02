@@ -144,73 +144,76 @@ const StoreFront = () => {
                                 </div>
                             </div>
                         </div>
+                        <footer >
+                            <div
+                                className=" pt-2 mt-1 text-light"
+                                style={{backgroundColor: "rgb(70, 9, 139)",
+                                    width: "98%",
+                                    marginLeft: "auto",
+                                    marginRight: "auto"
+                                }}>
+                                <div className="row gx-0">
+                                    <div className="col-12 col-md-4 ps-5">
+                                        <p className="text-primary fw-bold"><span className="text-bg-primary text-light">U</span>train</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.  Aspernatur autem doloremque sint doloribus quibusdam.
+                                        </p>
+                                    </div>
+                                    <div className="col-12 col-md-3 offset-md-1 ">
+                                        <p className="text-start text-secondary ps-3 fw-bold">CONTACT</p>
+                                        <ul className="nav flex-column">
+                                            <li className="nav-item">
+                                                <a className="nav-link text-start" aria-current="page" href="#"><i className="bi bi-telephone-fill"></i> ##########</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link text-start" href="#"><i className="bi bi-whatsapp"></i> ##########</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <p className="text-start ps-3 fw-bold">LINKS</p>
+                                        <ul className="nav flex-column">
+                                            <li className="nav-item">
+                                                <a className="nav-link text-start" aria-current="page" href="#"> HOME</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link text-start" href="#"> CONTACT</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link text-start" href="#"> SUPPORT</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-6 col-md-2">
+                                        <p className="text-start text-secondary ps-3 fw-bold">LINKS</p>
+                                        <ul className="nav flex-column">
+                                            <li className="nav-item">
+                                                <a className="nav-link text-start" aria-current="page" href="#"> FAQ</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link text-start" href="#"> Feedback</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link text-start" href="#"> Testimonial</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr className="dropdown-divider" />
+                                <div className="d-flex flex-column flex-md-row bd-highlight text-start  justify-content-between px-5">
+                                    <div className="p-2 bd-highlight">all rights reserved</div>
+                                    <div className="p-2 bd-highlight">terms of use</div>
+                                    <div className="p-2 bd-highlight">privacy policy</div>
+                                    <div className="p-2 bd-highlight">return policy</div>
+                                    <div className="p-2 bd-highlight">make by king</div>
+                                </div>
+                            </div>
+                        </footer>
                     </div>
+
                 </div>
-                <footer >
-                    <div className=" pt-2 mt-1 text-light"
-                         style={{backgroundColor: "rgb(70, 9, 139)",
-                             width: "98%",
-                             marginLeft: "auto",
-                             marginRight: "auto"
-                         }}>
-                        <div className="row gx-0">
-                            <div className="col-12 col-md-4 ps-5">
-                                <p className="text-primary fw-bold"><span className="text-bg-primary text-light">U</span>train</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit.  Aspernatur autem doloremque sint doloribus quibusdam.
-                                </p>
-                            </div>
-                            <div className="col-12 col-md-3 offset-md-1 ">
-                                <p className="text-start text-secondary ps-3 fw-bold">CONTACT</p>
-                                <ul className="nav flex-column">
-                                    <li className="nav-item">
-                                        <a className="nav-link text-start" aria-current="page" href="#"><i className="bi bi-telephone-fill"></i> ##########</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link text-start" href="#"><i className="bi bi-whatsapp"></i> ##########</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col-6 col-md-2">
-                                <p className="text-start ps-3 fw-bold">LINKS</p>
-                                <ul className="nav flex-column">
-                                    <li className="nav-item">
-                                        <a className="nav-link text-start" aria-current="page" href="#"> HOME</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link text-start" href="#"> CONTACT</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link text-start" href="#"> SUPPORT</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col-6 col-md-2">
-                                <p className="text-start text-secondary ps-3 fw-bold">LINKS</p>
-                                <ul className="nav flex-column">
-                                    <li className="nav-item">
-                                        <a className="nav-link text-start" aria-current="page" href="#"> FAQ</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link text-start" href="#"> Feedback</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link text-start" href="#"> Testimonial</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr className="dropdown-divider" />
-                        <div className="d-flex flex-column flex-md-row bd-highlight text-start  justify-content-between px-5">
-                            <div className="p-2 bd-highlight">all rights reserved</div>
-                            <div className="p-2 bd-highlight">terms of use</div>
-                            <div className="p-2 bd-highlight">privacy policy</div>
-                            <div className="p-2 bd-highlight">return policy</div>
-                            <div className="p-2 bd-highlight">make by king</div>
-                        </div>
-                    </div>
-                </footer>
+
             </div>
 
         </>

@@ -6,19 +6,19 @@ const StoreFront2 = () => {
         <>
             <div className="container-fluid">
                 <div className="row flex-nowrap">
-                    <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                    <div className="col-auto col-md-3 col-lg-3 col-xl-2 px-sm-2 px-0 bg-dark">
                         <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                             <a href="/" className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                                 <span className="fs-5 d-none d-sm-inline">Menu</span>
                             </a>
-                            <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                                <li className="nav-item">
+                            <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">
+                                <li className="nav-item border border-start-0 border-end-0 w-100">
                                     <a href="#" className="nav-link align-middle px-0">
                                         <i className="fs-4 bi-house" />
                                         <span className="ms-1 d-none d-sm-inline">Home</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li className="border border-start-0 border-end-0 w-100">
                                     <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
                                         <i className="fs-4 bi-speedometer2" />
                                         <span className="ms-1 d-none d-sm-inline">Dashboard</span>
@@ -37,13 +37,13 @@ const StoreFront2 = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li className="border border-start-0 border-end-0 w-100">
                                     <a href="#" className="nav-link px-0 align-middle">
                                         <i className="fs-4 bi-table" />
                                         <span className="ms-1 d-none d-sm-inline">Orders</span>
                                     </a>
                                 </li>
-                                <li>
+                                <li className="border border-start-0 border-end-0 w-100">
                                     <a href="#submenu2" data-bs-toggle="collapse" className="nav-link px-0 align-middle ">
                                         <i className="fs-4 bi-bootstrap" />
                                         <span className="ms-1 d-none d-sm-inline">Bootstrap</span>.
@@ -63,13 +63,13 @@ const StoreFront2 = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li className="border border-start-0 border-end-0 w-100">
                                     <a href="#submenu3" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
                                         <i className="fs-4 bi-grid" />
                                         <span className="ms-1 d-none d-sm-inline">Products</span>
                                     </a>
                                     <ul className="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                        <li className="w-100">
+                                        <li className="w-100 border border-bottom-white">
                                             <a href="#" className="nav-link px-0">
                                                 <span className="d-none d-sm-inline">Product</span>
                                                 1
@@ -81,12 +81,14 @@ const StoreFront2 = () => {
                                                 2
                                             </a>
                                         </li>
+                                        <hr />
                                         <li>
                                             <a href="#" className="nav-link px-0">
                                                 <span className="d-none d-sm-inline">Product</span>
                                                 3
                                             </a>
                                         </li>
+                                        <hr />
                                         <li>
                                             <a href="#" className="nav-link px-0">
                                                 <span className="d-none d-sm-inline">Product</span>
@@ -95,6 +97,7 @@ const StoreFront2 = () => {
                                         </li>
                                     </ul>
                                 </li>
+                                <hr />
                                 <li>
                                     <a href="#" className="nav-link px-0 align-middle">
                                         <i className="fs-4 bi-people" />
@@ -106,7 +109,7 @@ const StoreFront2 = () => {
                             <div className="dropdown pb-4">
                                 <a href="#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" className="rounded-circle" />
-                                    <span className="d-none d-sm-inline mx-1">loser</span>
+                                    <span className="d-none d-sm-inline mx-1">Alex Djoum</span>
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
                                     <li>
@@ -128,7 +131,7 @@ const StoreFront2 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-auto col-md-9" style={{background: "#ced4da"}}>
+                    <div className="col-auto col-md-9 col-lg-9" style={{background: "#ced4da"}}>
                         <nav className="navbar navbar-expand-lg navbar-dark p-3" id="headerNav" style={{backgroundColor: "rgb(80, 128, 8)"}}>
                             <div className="container-fluid">
                                 <a className="navbar-brand d-block d-lg-none" href="#">
@@ -141,8 +144,8 @@ const StoreFront2 = () => {
                                 </button>
 
                                 <div className=" collapse navbar-collapse" id="navbarNavDropdown">
-                                    <ul className="navbar-nav mx-auto ">
-                                        <li className="nav-item">
+                                    <ul className="navbar-nav mx-auto nav-tabs">
+                                        <li className="nav-item border border-start-0 border-end-0 border-top-0 border-bottom-white">
                                             <a className="nav-link mx-2 active" aria-current="page" href="#">Home</a>
                                         </li>
                                         <li className="nav-item">
@@ -175,7 +178,7 @@ const StoreFront2 = () => {
                         <div className="bd-main mt-4">
                             <div className="container">
                                 <div className="row text-center"><h2>All yours sessions</h2></div>
-                                <div className="row mt-2">
+                                <div className="row mt-5">
                                     <div
                                         className="rounded bg-light d-flex flex-column flex-md-row justify-content-md-between align-items-stretch bd-highlight session pe-0">
                                         <div className="bd-highlight flex1">
@@ -202,7 +205,8 @@ const StoreFront2 = () => {
                                         <div
                                             className="bd-highlight bg-success  rounded-end justify-content-center align-items-center details">
                                             <p className="mb-0" style={{color: "aliceblue"}}><span
-                                                className="fw-bold align-middle ">View</span><br />DETAILS</p></div>
+                                                className="fw-bold align-middle ">View</span><br />DETAILS</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="row mt-2 pb-4 ">
@@ -211,10 +215,12 @@ const StoreFront2 = () => {
                                         <div className="bd-highlight flex1">
                                             <div className="logo1"><p className="text-center"><i
                                                 className="bi bi-emoji-sunglasses-fill"
-                                                style={{fontSize: "xx-large"}}></i></p></div>
+                                                style={{fontSize: "xx-large"}}></i></p>
+                                            </div>
                                             <div className="ms-md-0"><p><span
                                                 className="fw-bold">December test session</span><br /><span
-                                                className="fw-lighter">Registered</span> Access to courses</p></div>
+                                                className="fw-lighter">Registered</span> Access to courses</p>
+                                            </div>
                                         </div>
                                         <div className="bd-highlight">
                                             <div className="logo1"><p className="text-center"><i
@@ -233,7 +239,8 @@ const StoreFront2 = () => {
                                             className="bd-highlight rounded-end justify-content-center align-items-center details"
                                             style={{backgroundColor: "rgb(5, 5, 44)"}}><p className="mb-0"
                                                                                         style={{color: "aliceblue;"}}><span
-                                            className="fw-bold align-middle ">View</span><br />DETAILS</p></div>
+                                            className="fw-bold align-middle ">View</span><br />DETAILS</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
